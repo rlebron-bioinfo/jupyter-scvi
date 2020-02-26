@@ -17,7 +17,7 @@ RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-la
      ~/miniconda.sh -b -p /opt/conda && \
      rm ~/miniconda.sh && \
      /opt/conda/bin/conda install -y python=$PYTHON_VERSION numpy pyyaml scipy ipython mkl mkl-include ninja cython typing && \
-     /opt/conda/bin/conda install -y -c pytorch magma-cuda100 && \
+     /opt/conda/bin/conda install -y -c pytorch magma-cuda102 && \
      /opt/conda/bin/conda install -y -c bioconda anndata scvi && \
      /opt/conda/bin/conda clean -ya
 ENV PATH /opt/conda/bin:$PATH
